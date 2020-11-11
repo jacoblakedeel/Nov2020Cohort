@@ -1,1 +1,9 @@
-This is my hello world document
+total 56
+-rw-r--r--  1 jacobdeel  staff  201 Nov 10 12:37 deserts.txt
+-rw-r--r--  1 jacobdeel  staff  174 Nov 10 12:37 glaciers.txt
+-rw-r--r--  1 jacobdeel  staff    0 Nov 10 15:32 hello.txt
+-rw-r--r--  1 jacobdeel  staff  130 Nov 10 12:37 islands.txt
+-rw-r--r--  1 jacobdeel  staff   97 Nov 10 12:37 lakes.txt
+-rw-r--r--  1 jacobdeel  staff  112 Nov 10 12:37 mountains.txt
+-rw-r--r--  1 jacobdeel  staff   69 Nov 10 12:37 oceans.txt
+-rw-r--r--  1 jacobdeel  staff  192 Nov 10 12:37 volcanoes.txt
