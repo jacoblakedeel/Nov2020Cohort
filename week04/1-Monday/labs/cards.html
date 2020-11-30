@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Card Demos</title>
+
+    <style>
+        .border{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+        .nav{
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(104, 101, 101);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            
+        }
+
+        .container{
+            display: flex;
+            height: 100%;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(194, 189, 189);
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            flex: 1;
+            margin: 5px;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .flex2{
+            flex: 2;
+        }
+        .flex3{
+            flex: 3;
+        }
+
+        .center{
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .spacebox{
+            height: 10vh;
+            width: 15vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        li{
+            font-size: 20px;
+            list-style: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 650px) {
+            .nav{
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(199, 79, 79);
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            }
+
+            .spacebox{
+            height: 10vh;
+            width: 15vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav border">
+        Flex Box Demo: Card Layouts
+        <ul>
+            <li class="spacebox"><a href="http://google.com"></a>Home</li>
+            <li class="spacebox"><a href="http://google.com"></a>About</li>
+            <li class="spacebox"><a href="http://google.com"></a>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/banana-wide.jpg" alt=""></div>
+            <div class="row flex1 center">This banana looks a lot like a bird, doesn't it?</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/boller.jpg" alt=""></div>
+            <div class="row flex1 center">Boller -or sweet wheat buns- are a favored snack and comfort food for Nor-weird-gans.</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/dinosaur-jacket.jpg" alt=""></div>
+            <div class="row flex1 center">They say dinosaurs had feathers. I think they wore swanky silver dusters as seen here.</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/boller-surprise.jpg" alt=""></div>
+            <div class="row flex1 center">Oh yes, sometimes when you bake boller, you put a piece of chocolate in the center before baking.</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/chocolate-frog.jpg" alt=""></div>
+            <div class="row flex1 center">This froggy made of chocolate.</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/diving-bird.jpg" alt=""></div>
+            <div class="row flex1 center">Birdy on the loose.</div>
+        </div>
+        <div class="box border">
+            <div class="row flex3"><img src="flexBox/cards/images/cropped/pool-cue-jenga.jpg" alt=""></div>
+            <div class="row flex1 center">People out here playing Jenga with pool sticks.</div>
+        </div>
+    </div>
+</body>
+</html>
