@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(47, 185, 116);
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        p{
+            background-color: rgb(230, 163, 135);
+            padding: 5px;
+        }
+        .newClassRule{
+            background-color: lime;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="greeting()">
+        heylo
+    </div>
+
+    <p style="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde id modi excepturi sapiente commodi fugiat placeat, eaque non quasi maiores quod expedita. Modi voluptate sequi, eius sint atque labore sapiente.</p>
+    
+    <button onclick="alert('heyo buddy')">Click Me</button>
+
+
+    <script>
+        // alert('heyo buddy')
+        // const greeting = () => {
+        //     console.log("hell there");
+        // }
+
+        let p = document.querySelector('p');
+
+        p.onclick = ()=>{
+
+            // p.setAttribute('style', 'background-color: orange; padding: 8px;')
+            p.setAttribute('class', 'newClassRule')
+        };
+
+    </script>
+</body>
+</html>
