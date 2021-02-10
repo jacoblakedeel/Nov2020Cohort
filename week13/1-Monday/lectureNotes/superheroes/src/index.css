@@ -1,0 +1,11 @@
+body{
+  background-color: black;
+}
+
+.text{
+  color: lightblue
+}
+
+ul{
+  list-style-type: none;
+}

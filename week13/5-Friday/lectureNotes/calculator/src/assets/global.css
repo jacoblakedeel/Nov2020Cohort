@@ -1,0 +1,26 @@
+
+body {
+    position: absolute;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: lightblue;
+    text-align: center;
+    height: 1000px;
+}
+
+
+.grayButtons{
+    background-color: gray;
+    font-size: small;
+    text-align: right;
+    border: thin solid lightcyan;
+    height: 50px;
+}
+.orangeButtons{
+    background-color: orange;
+    font-size: medium;
+    text-align: right;
+    border: thin solid lightcyan;
+    height: 50px;
+}

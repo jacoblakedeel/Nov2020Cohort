@@ -12,7 +12,7 @@ router.post("/registration", async (req, res) => {
   let password = req.body.password;
   let email = req.body.email;
 
-  //hash our password
+  //encrypt the password
 
   try {
     let passwordEncrypted = bcrypt.hashSync(password, 8);

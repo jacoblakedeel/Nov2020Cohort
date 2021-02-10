@@ -1,0 +1,19 @@
+{
+  "name": "nov2020cohort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlino2015/Nov2020Cohort.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlino2015/Nov2020Cohort/issues"
+  },
+  "homepage": "https://github.com/vlino2015/Nov2020Cohort#readme"
+}

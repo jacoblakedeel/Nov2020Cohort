@@ -26,6 +26,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(helmet());
 
+//passport
 app.use(passport.initialize());
 app.use(passport.session());
 //sub routes
