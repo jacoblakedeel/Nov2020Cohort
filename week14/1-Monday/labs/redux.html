@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+
+        //create actions
+        //events emitted from components
+
+        //action = event
+
+        //action creator > function that returns an object
+
+        const addPerson = (id, name, age) => {
+            //action = object
+            return{
+                type: "ADD", //name of event
+                personData: {
+                    id: id,
+                    name: name,
+                    age: age
+                }
+            }
+        }
+
+        const removePerson = (id) => {
+            return{
+                type: "REMOVE",
+                personID: id
+            }
+        }
+
+
+        let initialState = {
+            persons:[],
+            count: 0,
+            date: "12/19/1988"
+        }
+
+        //reducer = function (updates global state)
+
+        const reducer = (state, action) => { //action = object
+            
+            if(state === undefined){
+                state = initialState
+            }
+            //looking for matching action type (look for event name)
+
+            if(action.type === "ADD"){
+                //purpose is to add person to global state
+                return{
+                    ...state,
+                    persons: state.persons.concat(action.personData)
+                }
+            }
+            else if(action.type === "REMOVE"){
+                //purpose is to remove a person from the global state
+                return{
+                    ...state,
+                    persons: state.persons.filter(person => person.id !== action.personID)
+                }
+            }
+            else{
+                return state
+            }
+        }
+        
+        
+        
+
+        let store = Redux.createStore(reducer); //pass in reducer
+
+        let showState = () => {
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState);
+
+        store.dispatch(addPerson(1, "Jacob", 32)) //emitting an action
+        store.dispatch(addPerson(2, "P", 31)) //emitting an action
+        store.dispatch(addPerson(3, "K", 30)) //emitting an action
+        store.dispatch(removePerson(3)) //emitting an action
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Bind, Call and Apply
+
+
+
+    <script>
+
+        let bob = function(num, str){
+            console.log('bob', num, str, this);
+            return true;
+        }
+
+        let bill = {
+            name: 'Bill Murray',
+            movie: 'Lost in Translation',
+            myMethod: function(fn){
+                // fn();  runs the function that was just passed in
+                
+                fn.apply(bill, [])
+            }
+        }
+
+
+
+        // bob.call(bill, 2, 'goodbye');
+
+        // bob.apply(bill, [2, 'goodbye']);
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
